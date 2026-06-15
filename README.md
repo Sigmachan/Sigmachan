@@ -50,6 +50,7 @@
 | [**kms-hdr-panel**](https://github.com/Sigmachan/kms-hdr-panel) | native HDR settings panel for the COSMIC desktop | `Rust` · libcosmic |
 | [**opencore-x870e-hero**](https://github.com/Sigmachan/opencore-x870e-hero) | OpenCore EFI · X870E Hero + 9950X3D dual boot | `EFI` |
 | [**STLT**](https://github.com/Sigmachan/STLT) | LuaTools Ultimate — Millennium Steam-client plugin | `Python` · `JS` |
+| [**claw-code**](https://github.com/Sigmachan/claw-code) | Claude Code–style local terminal agent — polished TUI, multi-model (local vLLM / Claude / NIM) | `Rust` |
 
 ### `// off the clock`
 
