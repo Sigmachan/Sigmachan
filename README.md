@@ -1,6 +1,6 @@
 <!--
   GitHub profile README for github.com/Sigmachan
-  → create a repo named exactly  Sigmachan/Sigmachan  (same as your username)
+  → lives in the repo named exactly  Sigmachan/Sigmachan  (same as your username)
   → this file renders at the top of your profile.
 -->
 
@@ -34,14 +34,14 @@
 
 ### `// signals`
 
+- 🖥️ **low-level graphics** — KMS color pipelines, HDR/VRR, Wayland compositors. upstream `gamescope` on NVIDIA / Blackwell, native COSMIC panels & applets.
+- 🎮 **gaming on linux** — cross-desktop control panels, perf tuning, one-click driver & stack provisioning that just works.
+- 🛡️ **anti-censorship** — DPI bypass, Reality/VLESS, un-poisonable DNS, line-rate routing on locked-down vendor firmware. the net interprets censorship as damage.
+- 🧠 **local minds** — my own inference servers on bare metal + terminal agents that run 100% offline. quantized, no API keys, nobody watching.
+- 🔩 **firmware & hardware** — OpenCore EFI, EDL flash/root, GPU reclocking, keeping old silicon alive.
 - 🛰️ **fork-maintenance** — keeping heavily-diverged forks merged with fast-moving upstreams. the un-fun integration work, done right.
-- 🖥️ **low-level graphics** — KMS color pipelines, HDR, Wayland compositors. upstream `gamescope` on NVIDIA / Blackwell.
-- 🎨 **clean UI** — native compositor panels & applets, pixel-perfect frontends, tools that don't fight you.
-- 🧠 **local minds** — my own inference servers on bare metal. quantized, offline, nobody watching.
-- 🛡️ **anti-censorship** — DPI bypass, Reality/VLESS, line-rate routing. the net interprets censorship as damage.
-- 🏠 **digital survivalism** — own your stack, self-host everything. plain-text, no masters, no black boxes.
 
-> **free code for free people.** open tools, open formats, no lock-in. 🌲
+> **free code for free people.** open tools, open formats, no lock-in. plain-text, no masters, no black boxes. 🌲
 
 ### `// upstream`
 
@@ -49,15 +49,50 @@
 
 ### `// in the labs`
 
+**graphics · wayland · hdr**
+
 | project | what it is | stack |
 |---|---|---|
-| [**Tau Ceti**](https://github.com/TauCetiStation/TauCetiClassic) | Space Station 13 server, codebase & community i founded and ran 10+ years · 10k+ commits, 400+ forks | `DM` · BYOND |
-| [**gamescope**](https://github.com/Sigmachan/gamescope) | NVIDIA / Blackwell work on Valve's micro-compositor — discrete-GPU select, HDR, standalone DRM | `C++` · Vulkan |
-| [**kms-hdr**](https://github.com/Sigmachan/kms-hdr) | KMS atomic CTM injector — vivid color / HDR for any compositor | `C` |
+| [**kms-hdr**](https://github.com/Sigmachan/kms-hdr) | KMS atomic CTM injector — vivid color / HDR for any compositor, no color-management needed | `Rust` · `C` |
 | [**kms-hdr-panel**](https://github.com/Sigmachan/kms-hdr-panel) | native HDR settings panel for the COSMIC desktop | `Rust` · libcosmic |
-| [**STLT**](https://github.com/Sigmachan/STLT) | LuaTools Ultimate — Millennium Steam-client plugin | `Python` · `JS` |
+| [**wlgame**](https://github.com/Sigmachan/wlgame) | gaming-focused Wayland compositor — XWayland, HDR, VRR, FSR1/NIS/CAS upscaling | `C` |
+| [**wayscope-dbus**](https://github.com/Sigmachan/wayscope-dbus) | DBus control daemon for wayscope/gamescope — live HDR/VRR/FPS for COSMIC | `Rust` |
+| [**cosmic-applet-vrammon**](https://github.com/Sigmachan/cosmic-applet-vrammon) | native COSMIC applet — VRAM / AI-model / KV-cache telemetry + inference mode switching | `Rust` |
+| [**amd-hdmi-audio-fix**](https://github.com/Sigmachan/amd-hdmi-audio-fix) | fix AMD HDMI/DP audio drift, stutter & A/V desync on Linux — idempotent | `Shell` |
+
+**gaming on linux**
+
+| project | what it is | stack |
+|---|---|---|
+| [**loadout**](https://github.com/Sigmachan/loadout) | cross-desktop gaming control panel + software catalog — COSMIC / KDE / GNOME, cross-distro | `Rust` · libcosmic |
+| [**perfmax**](https://github.com/Sigmachan/perfmax) | AI-driven real-time OS performance optimizer — native egui, KDE tray, MiMo-7B-RL | `Rust` |
+| [**wired-toys**](https://github.com/Sigmachan/wired-toys) | Arch/CachyOS fork of LinuxToys — one-click drivers, snapshot rollback + my COSMIC/HDR/gaming stack | `Python` |
+| [**copland-os**](https://github.com/Sigmachan/copland-os) | Garuda Wired — custom znver5/Clang AUR+local pacman repo (gamescope-git, proton-ge, llama.cpp-blackwell…) | `Shell` |
+
+**anti-censorship · routers**
+
+| project | what it is | stack |
+|---|---|---|
+| [**xiaomi-router-freedom**](https://github.com/Sigmachan/xiaomi-router-freedom) | transparent VLESS routing + un-poisonable DNS for Xiaomi WiFi-7 (IPQ5424/9554) on read-only vendor firmware — no reflash | `Shell` · sing-box |
+| [**open-routerich**](https://github.com/Sigmachan/open-routerich) | universal OpenWrt DPI-bypass toolkit — any router, 18.06→25.12, Xiaomi IPQ immutable + Entware | `Shell` |
+| [**mochawrt**](https://github.com/Sigmachan/mochawrt) | ☕ Catppuccin-Mocha web panel for Xiaomi & OpenWrt routers — immutable-safe device compat layer | `HTML` |
+
+**local minds · ai agents**
+
+| project | what it is | stack |
+|---|---|---|
 | [**claw-code**](https://github.com/Sigmachan/claw-code) | Claude Code–style local terminal agent — polished TUI, multi-model (local vLLM / Claude / NIM) | `Rust` |
-| [**opencore-x870e-hero**](https://github.com/Sigmachan/opencore-x870e-hero) | OpenCore EFI · X870E Hero + 9950X3D dual boot | `EFI` |
+| [**hackcode**](https://github.com/Sigmachan/hackcode) | open-source, uncensored AI hacking terminal — 100% local, no keys, no filters | `Rust` |
+| [**OmniRouter**](https://github.com/Sigmachan/OmniRouter) | OpenAI-compat proxy routing Claude / GPT-4o / DeepSeek / MiMo via one key | `Python` |
+
+**firmware · hardware · worlds**
+
+| project | what it is | stack |
+|---|---|---|
+| [**opencore-x870e-hero**](https://github.com/Sigmachan/opencore-x870e-hero) | OpenCore 1.0.7 EFI — ASUS ROG Crosshair X870E Hero + 9950X3D, CachyOS + macOS dual boot | `EFI` |
+| [**LTBox**](https://github.com/Sigmachan/LTBox) | matrix-green ratatui front-end for Lenovo Qualcomm EDL flash/root | `Rust` |
+| [**STLT**](https://github.com/Sigmachan/STLT) | LuaTools Ultimate — Millennium Steam-client plugin | `Python` · `JS` |
+| [**Tau Ceti**](https://github.com/TauCetiStation/TauCetiClassic) | Space Station 13 server, codebase & community i founded and ran 10+ years · 440+ forks | `DM` · BYOND |
 
 ### `// off the clock`
 
