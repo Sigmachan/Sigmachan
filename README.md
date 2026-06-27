@@ -76,6 +76,15 @@
 | [**xiaomi-router-freedom**](https://github.com/Sigmachan/xiaomi-router-freedom) | transparent VLESS routing + un-poisonable DNS for Xiaomi WiFi-7 (IPQ5424/9554) on read-only vendor firmware — no reflash | `Shell` · sing-box |
 | [**open-routerich**](https://github.com/Sigmachan/open-routerich) | universal OpenWrt DPI-bypass toolkit — any router, 18.06→25.12, Xiaomi IPQ immutable + Entware | `Shell` |
 | [**mochawrt**](https://github.com/Sigmachan/mochawrt) | ☕ Catppuccin-Mocha web panel for Xiaomi & OpenWrt routers — immutable-safe device compat layer | `HTML` |
+| [**xrctl**](https://github.com/Sigmachan/xrctl) | 🛰️ one CLI for Xiaomi routers — Wi-Fi/DHCP/forwarding, hidden nvram/bdata unlocks, mihomo TUN, WARP, DPI bypass | `Shell` |
+| [**crashka**](https://github.com/Sigmachan/crashka) | tiny mihomo proxy manager for Xiaomi vendor OpenWrt — a clean ShellCrash alternative, selective routing | `Shell` |
+
+**android ↔ desktop**
+
+| project | what it is | stack |
+|---|---|---|
+| [**dexwire**](https://github.com/Sigmachan/dexwire) | run real Android apps & games as resizable PC windows via scrcpy 4.0 — DeX-style per-app virtual displays, gamepad profile, KDE launchers, killswitch | `Python` |
+| [**sidewire**](https://github.com/Sigmachan/sidewire) | turn an Android tablet into a left-positioned second display on KDE Plasma 6 Wayland via KRDP virtual monitor — GPU-agnostic | `Shell` |
 
 **local minds · ai agents**
 
